@@ -4,21 +4,26 @@
 package shejimoshi.observer;
 
 /**
- * TODO ÔÚ´ËĞ´ÉÏÀàµÄÏà¹ØËµÃ÷¡£<br>
+ * TODOåœ¨æ­¤å†™ä¸Šç±»çš„ç›¸å…³è¯´æ˜ã€‚<br>
  * @author luobin <br>
  * @version 
- * @time 2017-10-14ÏÂÎç10:58:39 <br>
+ * @time 2017-10-14ä¸‹åˆ10:58:39 <br>
  * @see
  * @since 
  */
-public class ObserveA implements IObserve {
+public class ObserveA extends Observe {
+	
+	public ObserveA(final Subject subject) {
+		this.subject = subject;
+		this.subject.attach(this);
+	}
 
 	/* (non-Javadoc)
 	 * @see shejimoshi.observer.IObserve#update()
 	 */
 	public void update() {
 		// TODO Auto-generated method stub
-
+		System.out.println("ObserveA print:" + this.subject.getState());
 	}
 
 }

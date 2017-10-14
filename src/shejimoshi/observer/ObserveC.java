@@ -1,8 +1,4 @@
-/**
- * Copyright 2000-2020 luobin All Rights Reserved.
- */
 package shejimoshi.observer;
-
 /**
  * TODO 在此写上类的相关说明。<br>
  * @author luobin <br>
@@ -11,9 +7,9 @@ package shejimoshi.observer;
  * @see
  * @since 
  */
-public class ObserveB extends Observe {
-	
-	public ObserveB(final Subject subject) {
+public class ObserveC extends Observe {
+
+	public ObserveC(final Subject subject) {
 		this.subject = subject;
 		this.subject.attach(this);
 	}
@@ -23,7 +19,7 @@ public class ObserveB extends Observe {
 	 */
 	public void update() {
 		// TODO Auto-generated method stub
-		System.out.println("ObserveB print:" + this.subject.getState());
+		System.out.println("ObserveC print:" + this.subject.getState());
 	}
 
 }

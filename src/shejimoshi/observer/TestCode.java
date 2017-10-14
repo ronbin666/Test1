@@ -4,14 +4,13 @@
 package shejimoshi.observer;
 
 /**
- * TODO ÔÚ´ËĞ´ÉÏÀàµÄÏà¹ØËµÃ÷¡£<br>
+ * TODO åœ¨æ­¤å†™ä¸Šç±»çš„ç›¸å…³è¯´æ˜ã€‚<br>
  * @author luobin <br>
  * @version 
- * @time 2017-10-14ÏÂÎç10:49:23 <br>
+ * @time 2017-10-15ä¸Šåˆ01:12:50 <br>
  * @see
  * @since 
  */
-public interface IObserve {
+public class TestCode {
 
-	public void update();
 }
